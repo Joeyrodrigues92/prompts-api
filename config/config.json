@@ -1,10 +1,10 @@
 {
   "development": {
-    "database": "prompts_api_express_development",
+    "database": "prompts_api_development",
     "dialect": "postgres"
   },
   "test": {
-    "database": "prompts_api_express_test",
+    "database": "prompts_api_test",
     "dialect": "postgres"
   },
   "production": {
