@@ -19,16 +19,10 @@ const typeDefs = gql
         type Query { 
             prompt: Prompt
         }
-    `;
+`;
 
 // Since we defined a Query type that contains Prompt obj
 // We can fetch Prompt from our db
-
-
-
-
-
-
 
 
 //      Resolver Map
@@ -70,7 +64,8 @@ const resolvers = {
 
 const server = new ApolloServer({
     typeDefs,
-    resolvers,
+    resolvers,   
+ //ADDED FOR PRODUCTION RUN
     introspection: true,
     playground: true,
 });
