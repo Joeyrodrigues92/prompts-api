@@ -10,7 +10,6 @@ const port = process.env.PORT || 4000;
 // Define what types of data is avaible in the GraphQL server
 const typeDefs = gql
 // The first object is defining ea Prompt and making it avaible to be referenced in our query
-
 `
         type Prompt { 
             title: String!, 
@@ -35,7 +34,7 @@ const resolvers = {
     Query: {
 //     This prompt matches rompt above it (line 17)           
         prompt: async (_, args) =>{
-//    4 FIELD THAT BE USED AS ARGUMENTS   
+//    4 FIELD THAT COULD BE USED AS ARGUMENTS   
 //       parent: 
 //          an obj that contains parent type (Query) dont really need it but nice to have access to resolver map
 //     
